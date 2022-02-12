@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>On click</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-con">
+        <div class="copysection">
+            <button class="btn" id="btn">Copied!</button>
+
+          <img
+            src="click.svg" alt="" style="cursor: pointer" onclick="copy1()"id="copy"
+          />
+        </div>
+        <div class="content-container" id="innercontent">
+          <h1>What is HTML</h1>
+          <p>
+            
+   <p>. HTML stands for Hyper Text Markup Language</p>
+   <p>. HTML is the standard markup language for creating Web pages</p>
+    <p>. HTML describes the structure of a Web page</p>
+    <p>. HTML consists of a series of elements</p>
+    <p>. HTML elements tell the browser how to display the content</p>
+    <p>. HTML elements label pieces of content such as "this is a heading", "this is a . paragraph"</p>
+
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function copy1() {
+          let btn=document.getElementById('btn');
+          let innercontent=document.getElementById('innercontent').innerText;
+        navigator.clipboard.writeText(innercontent);
+        if ((writeText = copy)) {
+
+          let change = document.getElementById("copy");
+          change.src = "ok.svg";
+          btn.style.display='block'
+        } else {
+          let change = document.getElementById("copy");
+          change.src = "click.svg";
+          btn.style.display='none'
+        }
+      }
+      setInterval(() => {
+        let change = document.getElementById("copy");
+        change.src = "click.svg";
+        let btn=document.getElementById('btn');
+        btn.style.display='none'
+      }, 4000);
+    </script>
+  </body>
+</html>

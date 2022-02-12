@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+.btn{
+    width: auto;
+    height: auto;
+    background-color: rgb(60, 67, 74);
+    color: white;
+    border: 1px solid rgb(60, 67, 74);
+    padding: 2px;
+    border-radius: 2px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    
+}
+.container{
+    height: 97vh;
+    background-color:rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* --bodycolor:; */
+box-sizing: border-box;
+}
+.main-con{
+    width: 55vw;
+    height:70vh;
+    /* background-color: rgb(60, 67, 74); */
+    background-color: white;
+
+    box-sizing: border-box;
+
+}
+.copysection{
+    /* width:auto;
+    height: auto; */
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  background-color: white;
+   
+}
+.content-container{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
